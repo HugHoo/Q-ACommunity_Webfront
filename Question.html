@@ -32,7 +32,12 @@
             background-color: #fff;
         }
 
-        .navbar {
+        .cus-border-shadow {
+            border: 1px solid rgba(30, 35, 42, .06);
+            box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
+        }
+
+        .cus-border-bottom-shadow {
             border-bottom: 1px solid rgba(30, 35, 42, .06);
             box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
         }
@@ -66,7 +71,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white cus-border-bottom-shadow">
             <div class="container">
                 <a class="navbar-brand" href="#">Q&A CMNTY</a>
                 <div class="collapse navbar-collapse">
@@ -108,7 +113,7 @@
     </header>
 
     <!-- Question area -->
-    <div class="bg-white">
+    <div class="bg-white cus-border-bottom-shadow">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -159,6 +164,38 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- answers area -->
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-8">
+                <div class="row px-1">
+                    <div class="col-sm-12 bg-white" style="box-shadow: 0 1px 3px rgba(0,0,0,.1); border-radius: 2px;">
+                        <!-- answer card -->
+                        <div class="answer-card" style="padding: 15px 5px;">
+                            <!-- avatar & short info -->
+                            <div class="">
+                                <div class="d-inline-block align-middle">
+                                    <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                </div>
+                                <div class="d-inline-block ml-2 align-middle">
+                                    <div>Hugo Hoo</div>
+                                    <div class="text-muted" style="font-size: 95%;">This is my short intro.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="row px-1">
+                    <div class="col-sm-12 bg-white" style="box-shadow: 0 1px 3px rgba(0,0,0,.1); border-radius: 2px;">
+                        another info
                     </div>
                 </div>
             </div>
