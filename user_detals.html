@@ -11,10 +11,14 @@
     <!-- <link rel="stylesheet" href="public/css/simplemde.min.css"> -->
     <link href="public/font/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="public/css/cus-style.css">
+
     <script src="public/js/jquery-3.1.1.min.js"></script>
     <script src="public/js/umd/popper.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <!-- <script src="public/js/simplemde.min.js"></script> -->
+
+    <script src="public/js/cus-style-js/cus-style.js"></script>
 
     <style>
         body {
@@ -40,7 +44,6 @@
 
         .cus-data-value {
             display: inline-block;
-            text-align: center;
         }
 
         .cus-data-value .title {
@@ -78,7 +81,30 @@
         a.cus-a:hover {
             color: #495057;
         }
-        
+        /* .cus-navs {
+            background: #ECEFF1;
+            color: #78909C;
+            font-weight: 400;
+        }
+
+        .cus-navs .nav-item {
+            display: inline-block;
+            padding: 15px 10px;
+            cursor: pointer;
+        }
+
+        .cus-navs .nav-item:hover {
+            color: #9575CD;
+            border-bottom: 2px solid #9575CD;
+            transition: all 250ms ease 0s;
+        }
+
+        .cus-navs .nav-item.active {
+            font-weight: 500;
+            color: #9575CD;
+            border-bottom: 2px solid #9575CD;
+        } */
+        /* tabs */
     </style>
 
 </head>
@@ -137,97 +163,126 @@
     </header>
 
     <!-- User detail info area -->
-    <div class="bg-white cus-border-bottom-shadow">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <!-- <div class="mt-4 mb-3">
-                                <span class="badge badge-pill badge-primary">Primary</span>
-                                <span class="badge badge-pill badge-secondary">Secondary</span>
-                                <span class="badge badge-pill badge-success">Success</span>
-                                <span class="badge badge-pill badge-danger">Danger</span>
-                                <span class="badge badge-pill badge-warning">Warning</span>
-                                <span class="badge badge-pill badge-info">Info</span>
-                                <span class="badge badge-pill badge-light">Light</span>
-                                <span class="badge badge-pill badge-dark">Dark</span>
-                            </div>
-                            <h4>Question title</h4>
-                            <p class="lead">
-                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-                            </p> -->
-
-                            <div class="row mt-4 mb-3">
-                                <div class="col-lg-3 col-md-4 align-top">
-                                    <img src="public/img/avatars/khalil.png" alt="" class="img-fluid" style="border-radius: 5px;">
-                                </div>
-                                <div class="col-lg-9 col-md-8 align-top">
-                                    <div><h4>Hugo Hoo</h4></div>
-                                    <div class="row">
-                                        <div class="col-lg-8 col-sm-12">
-                                            <div>
-                                                College
-                                            </div>
-                                            <div>
-                                                Major
-                                            </div>
-                                            <div>
-                                                This is my intro details. 
-                                                This is my intro details. 
-                                                This is my intro details. 
-                                                This is my intro details. 
-                                                This is my intro details. 
-                                                This is my intro details. 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+    <div class="container">
+        <div class="row">
+            <!-- user info details -->
+            <div class="col-md-4 col-sm-12 pt-3 px-2">
+                <div id="user_info">
+                    <div class="cus-info-card bg-white cus-border-bottom-shadow">
+                        <!-- avatar -->
+                        <div class="text-center pt-5 pb-3">
+                            <img src="public/img/avatars/khalil.png" class="img-fluid" alt="" style="height: 110px; width: 110px; border-radius: 100px;">
+                            <div class="lead mt-2" style="font-weight: normal;">Hugo Hoo</div>
+                            <div class="text-muted">Intergrated delay cancer</div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="mt-4 mb-3">
-                                <div class="cus-data-value float-right mr-sm-3">
+
+                        <div class="text-center">
+                            <button class="btn btn-outline-primary">
+                                        Edit profile
+                                    </button>
+                        </div>
+
+                        <div class="text-left px-4 pt-3 pb-2">
+                            <div class="mb-2">
+                                <span class="text-muted">College</span><br/>
+                                <span>Zheng Zhou Univercity</span>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted">Major</span><br/>
+                                <span>Software engineering</span>
+                            </div>
+                            <div class="mb-2">
+                                <span class="text-muted">Intro</span><br/>
+                                <span>
+                                            Vivamus sagittis lacus vel augue laoreet rutrum 
+                                            faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                            Vivamus sagittis lacus vel augue laoreet rutrum.
+                                        </span>
+                            </div>
+                        </div>
+
+                        <div class="text-left px-4 pt-2 pb-4">
+                            <div class="text-muted">Achievements</div>
+                            <div>
+                                <span class="oi oi-thumb-up mr-1" style="color: lightgrey"></span> Get 49 Endorses
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container-fluid mt-3 cus-border-bottom-shadow">
+                        <div class="row pt-3 pb-3 bg-white">
+                            <div class="col-6 text-center" style="border-right: 1px solid #f3f3f3;">
+                                <div class="cus-data-value">
+                                    <div class="title">Follow</div>
+                                    <div class="content">64</div>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="cus-data-value">
                                     <div class="title">Follower</div>
                                     <div class="content">7</div>
-                                </div>
-                                <div class="cus-data-value float-right mr-sm-4">
-                                    <div class="title">Follow</div>
-                                    <div class="content">94</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 mb-3">
-                            <div class="row">
-                                <div class="col-sm-8">
-                                    <div class="cus-operations">
-                                        <a class="cus-operation-item">36 Answers</a>
-                                        <a class="cus-operation-item">
-                                            <span class="oi oi-share"></span>
-                                            Share
-                                        </a>
-                                        <a class="cus-operation-item">
-                                            <span class="oi oi-flag"></span>
-                                            Report
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <button class="btn btn-outline-primary float-right mr-sm-3" style="padding: .3rem .75rem;">
-                                        <span class="oi oi-pencil"></span>
-                                        Edit Profile
-                                    </button>
-                                    <!-- <button class="btn btn-primary float-right mr-sm-2" style="padding: .3rem .75rem;">Follow</button> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <!-- user activities -->
+            <div class="col-md-8 col-sm-12 pt-3 px-2" style="border-radius: 5px;">
+                <section class="wrapper" style="background-color: #46a1de;">
+                    <ul class="tabs">
+                        <li class="active">Timelines</li>
+                        <li>Answers</li>
+                        <li>Questions</li>
+                        <li>Articles</li>
+                        <li>Collection</li>
+                    </ul>
+
+                    <ul class="tab__content" id="dashboard">
+                        <li class="active">
+                            <div class="content__wrapper">
+                                <h2 class="text-color">Timelines</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content__wrapper">
+                                <h2 class="text-color">Answers</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content__wrapper">
+                                <h2 class="text-color">Question</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content__wrapper">
+                                <h2 class="text-color">Articles</h2>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content__wrapper">
+                                <h2 class="text-color">Collection</h2>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
             </div>
         </div>
     </div>
 
 </body>
+
+<script>
+    $(document).ready(function () {
+        var user_info_height = $("#user_info").css("height");
+
+        $("#dashboard").css("min-height", user_info_height);
+    });
+
+</script>
 
 </html>
