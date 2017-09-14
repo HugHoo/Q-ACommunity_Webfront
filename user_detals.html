@@ -11,13 +11,15 @@
     <!-- <link rel="stylesheet" href="public/css/simplemde.min.css"> -->
     <link href="public/font/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="public/css/cus-style.css">
+    <!-- custom css style: tabs -->
+    <link rel="stylesheet" href="public/css/cus-style/cus-style.css">
 
     <script src="public/js/jquery-3.1.1.min.js"></script>
     <script src="public/js/umd/popper.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <!-- <script src="public/js/simplemde.min.js"></script> -->
-
+    
+    <!-- custom js: tabs -->
     <script src="public/js/cus-style-js/cus-style.js"></script>
 
     <style>
@@ -105,6 +107,14 @@
             border-bottom: 2px solid #9575CD;
         } */
         /* tabs */
+
+        /* answer excerpt card */
+        .cus-answer-excerpt-card {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-left: 1.5rem;
+        }
     </style>
 
 </head>
@@ -168,7 +178,7 @@
             <!-- user info details -->
             <div class="col-md-4 col-sm-12 pt-3 px-2">
                 <div id="user_info">
-                    <div class="cus-info-card bg-white cus-border-bottom-shadow">
+                    <div class="cus-info-card bg-white cus-border-bottom-shadow" style="border-radius: 5px;">
                         <!-- avatar -->
                         <div class="text-center pt-5 pb-3">
                             <img src="public/img/avatars/khalil.png" class="img-fluid" alt="" style="height: 110px; width: 110px; border-radius: 100px;">
@@ -177,9 +187,9 @@
                         </div>
 
                         <div class="text-center">
-                            <button class="btn btn-outline-primary">
-                                        Edit profile
-                                    </button>
+                            <button class="btn btn-outline-success">
+                                Edit profile
+                            </button>
                         </div>
 
                         <div class="text-left px-4 pt-3 pb-2">
@@ -211,7 +221,7 @@
                     </div>
 
                     <div class="container-fluid mt-3 cus-border-bottom-shadow">
-                        <div class="row pt-3 pb-3 bg-white">
+                        <div class="row pt-3 pb-3 bg-white" style="border-radius: 5px;">
                             <div class="col-6 text-center" style="border-right: 1px solid #f3f3f3;">
                                 <div class="cus-data-value">
                                     <div class="title">Follow</div>
@@ -242,19 +252,83 @@
                     </ul>
 
                     <ul class="tab__content" id="dashboard">
-                        <li class="active">
+                        <li>
                             <div class="content__wrapper">
                                 <h2 class="text-color">Timelines</h2>
                             </div>
                         </li>
-                        <li>
-                            <div class="content__wrapper">
+                        <li  class="active">
+                            <!-- <div class="content__wrapper">
                                 <h2 class="text-color">Answers</h2>
+                            </div> -->
+                            <!-- answer card -->
+                            <div class="cus-answer-excerpt-card">
+                                <!-- question title -->
+                                <h5>Question title</h5>
+                                <!-- avatar info -->
+                                <div>
+                                    <div class="d-inline-block align-middle">
+                                        <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                    </div>
+                                    <div class="d-inline-block ml-2 align-middle">
+                                        <div>Hugo Hoo</div>
+                                        <div class="text-muted" style="font-size: 95%;">This is my short intro.</div>
+                                    </div>
+                                </div>
+                                <!-- answer excerpt -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
                             </div>
                         </li>
                         <li>
-                            <div class="content__wrapper">
+                            <!-- <div class="content__wrapper">
                                 <h2 class="text-color">Question</h2>
+                            </div> -->
+                            <div class="py-3 px-4">
+                                <!-- question title -->
+                                <h5>Question title</h5>
+                                <!-- question content -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
+
+                                <!-- another info -->
+                                <div class="text-muted" style="font-size: 90%;">
+                                    <span class="mr-2">2017-9-4</span>
+                                    <span class="mr-2">6 Answers</span>
+                                    <span class="mr-2">108 Follow</span>
+                                </div>
+                            </div>
+                            <div class="py-3 px-4">
+                                <!-- question title -->
+                                <h5>Question title</h5>
+                                <!-- question content -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
+
+                                <!-- another info -->
+                                <div class="text-muted" style="font-size: 90%;">
+                                    <span class="mr-2">2017-9-4</span>
+                                    <span class="mr-2">6 Answers</span>
+                                    <span class="mr-2">108 Follow</span>
+                                </div>
+                            </div>
+                            <div class="py-3 px-4">
+                                <!-- question title -->
+                                <h5>Question title</h5>
+                                <!-- question content -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
+
+                                <!-- another info -->
+                                <div class="text-muted" style="font-size: 90%;">
+                                    <span class="mr-2">2017-9-4</span>
+                                    <span class="mr-2">6 Answers</span>
+                                    <span class="mr-2">108 Follow</span>
+                                </div>
                             </div>
                         </li>
                         <li>

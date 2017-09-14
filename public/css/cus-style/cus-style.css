@@ -86,7 +86,7 @@
 	transform: translateY(70%);
   }
   .tabs > li.active {
-	color: #46a1de;
+	color: #50555a;
   }
   .tabs > li.active:before {
 	transition-duration: .5s;
@@ -99,7 +99,7 @@
 	background-color: white;
 	position: relative;
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 0 0 5px 5px;
   }
   .tab__content > li {
 	width: 100%;
