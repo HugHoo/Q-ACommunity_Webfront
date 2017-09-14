@@ -18,11 +18,15 @@
     <script src="public/js/umd/popper.min.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <!-- <script src="public/js/simplemde.min.js"></script> -->
-    
+
     <!-- custom js: tabs -->
     <script src="public/js/cus-style-js/cus-style.js"></script>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #f3f3f3;
         }
@@ -107,13 +111,59 @@
             border-bottom: 2px solid #9575CD;
         } */
         /* tabs */
-
         /* answer excerpt card */
+
+        .cus-px {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
         .cus-answer-excerpt-card {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        .cus-answer-excerpt-card .cus-split-short-info {
+            color: #8590a6;
+        }
+
+        .cus-answer-excerpt-card .cus-split-short-info .cus-split-item {
+            margin-right: .5rem;
+            font-size: 90%;
+        }
+        /* cus-question excerpt card */
+
+        .cus-question-excerpt-card {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
             padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .cus-question-excerpt-card .cus-split-short-info {
+            color: #8590a6;
+        }
+
+        .cus-question-excerpt-card .cus-split-short-info .cus-split-item {
+            margin-right: .5rem;
+            font-size: 90%;
+        }
+        /* cus-article excerpt card */
+
+        .cus-article-excerpt-card {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
             padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .cus-article-excerpt-card .cus-split-short-info {
+            color: #8590a6;
+        }
+
+        .cus-article-excerpt-card .cus-split-short-info .cus-split-item {
+            margin-right: .5rem;
+            font-size: 90%;
         }
     </style>
 
@@ -257,14 +307,190 @@
                                 <h2 class="text-color">Timelines</h2>
                             </div>
                         </li>
-                        <li  class="active">
+                        <!-- answer list -->
+                        <li class="active" style="padding-top: 1rem;">
                             <!-- <div class="content__wrapper">
                                 <h2 class="text-color">Answers</h2>
                             </div> -->
                             <!-- answer card -->
                             <div class="cus-answer-excerpt-card">
                                 <!-- question title -->
+                                <h5 class="cus-px">Question title</h5>
+                                <!-- avatar info -->
+                                <div class="cus-px" style="border-left: 2px solid #29B6F6;">
+                                    <div class="d-inline-block align-middle">
+                                        <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                    </div>
+                                    <div class="d-inline-block ml-2 align-middle">
+                                        <div>Hugo Hoo</div>
+                                        <div style="color: #555; font-size: 95%;">This is my short intro.</div>
+                                    </div>
+                                </div>
+                                <!-- agree number -->
+                                <div class="cus-split-short-info cus-px">
+                                    <span class="cus-split-item">23 Agree with this answer</span>
+                                </div>
+                                <!-- answer excerpt -->
+                                <p class="mb-1 cus-px">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                </p>
+                                <!-- datetime -->
+                                <div class="cus-split-short-info cus-px">
+                                    <span class="cus-split-item">2017-9-4</span>
+                                </div>
+                            </div>
+                            <!-- answer card -->
+                            <div class="cus-answer-excerpt-card">
+                                <!-- question title -->
+                                <h5 class="cus-px">Question title</h5>
+                                <!-- avatar info -->
+                                <div class="cus-px" style="border-left: 2px solid #F06292;">
+                                    <div class="d-inline-block align-middle">
+                                        <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                    </div>
+                                    <div class="d-inline-block ml-2 align-middle">
+                                        <div>Hugo Hoo</div>
+                                        <div style="color: #555; font-size: 95%;">This is my short intro.</div>
+                                    </div>
+                                </div>
+                                <!-- agree number -->
+                                <div class="cus-split-short-info cus-px">
+                                    <span class="cus-split-item">23 Agree with this answer</span>
+                                </div>
+                                <!-- answer excerpt -->
+                                <p class="mb-1 cus-px">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                </p>
+                            </div>
+                            <!-- answer card -->
+                            <div class="cus-answer-excerpt-card">
+                                <!-- question title -->
+                                <h5 class="cus-px">Question title</h5>
+                                <!-- avatar info -->
+                                <div class="cus-px" style="border-left: 2px solid #9E9E9E;">
+                                    <div class="d-inline-block align-middle">
+                                        <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                    </div>
+                                    <div class="d-inline-block ml-2 align-middle">
+                                        <div>Hugo Hoo</div>
+                                        <div style="color: #555; font-size: 95%;">This is my short intro.</div>
+                                    </div>
+                                </div>
+                                <!-- agree number -->
+                                <div class="cus-split-short-info cus-px">
+                                    <span class="cus-split-item">23 Agree with this answer</span>
+                                </div>
+                                <!-- answer excerpt -->
+                                <p class="mb-1 cus-px">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                </p>
+                            </div>
+                            <!-- answer card -->
+                            <div class="cus-answer-excerpt-card">
+                                <!-- question title -->
+                                <h5 class="cus-px">Question title</h5>
+                                <!-- avatar info -->
+                                <div class="cus-px" style="border-left: 2px solid #00C853;">
+                                    <div class="d-inline-block align-middle">
+                                        <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                    </div>
+                                    <div class="d-inline-block ml-2 align-middle">
+                                        <div>Hugo Hoo</div>
+                                        <div style="color: #555; font-size: 95%;">This is my short intro.</div>
+                                    </div>
+                                </div>
+                                <!-- agree number -->
+                                <div class="cus-split-short-info cus-px">
+                                    <span class="cus-split-item">23 Agree with this answer</span>
+                                </div>
+                                <!-- answer excerpt -->
+                                <p class="mb-1 cus-px">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                </p>
+                            </div>
+                            <!-- answer card -->
+                            <div class="cus-answer-excerpt-card">
+                                <!-- question title -->
+                                <h5 class="cus-px">Question title</h5>
+                                <!-- avatar info -->
+                                <div class="cus-px" style="border-left: 2px solid #FFAB00;">
+                                    <div class="d-inline-block align-middle">
+                                        <img src="public/img/avatars/khalil.png" alt="" style="height: 40px; width: 40px; border-radius: 2px;">
+                                    </div>
+                                    <div class="d-inline-block ml-2 align-middle">
+                                        <div>Hugo Hoo</div>
+                                        <div style="color: #555; font-size: 95%;">This is my short intro.</div>
+                                    </div>
+                                </div>
+                                <!-- agree number -->
+                                <div class="cus-split-short-info cus-px">
+                                    <span class="cus-split-item">23 Agree with this answer</span>
+                                </div>
+                                <!-- answer excerpt -->
+                                <p class="mb-1 cus-px">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                </p>
+                            </div>
+                        </li>
+                        <!-- question list -->
+                        <li style="padding-top: 1rem;">
+                            <!-- <div class="content__wrapper">
+                                <h2 class="text-color">Question</h2>
+                            </div> -->
+                            <div class="cus-question-excerpt-card">
+                                <!-- question title -->
                                 <h5>Question title</h5>
+                                <!-- question content -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
+
+                                <!-- another info -->
+                                <div class="cus-split-short-info">
+                                    <span class="cus-split-item">2017-9-4</span>
+                                    <span class="cus-split-item">6 Answers</span>
+                                    <span class="cus-split-item">108 Follow</span>
+                                </div>
+                            </div>
+                            <div class="cus-question-excerpt-card">
+                                <!-- question title -->
+                                <h5>Question title</h5>
+                                <!-- question content -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
+
+                                <!-- another info -->
+                                <div class="cus-split-short-info">
+                                    <span class="cus-split-item">2017-9-4</span>
+                                    <span class="cus-split-item">6 Answers</span>
+                                    <span class="cus-split-item">108 Follow</span>
+                                </div>
+                            </div>
+                            <div class="cus-question-excerpt-card">
+                                <!-- question title -->
+                                <h5>Question title</h5>
+                                <!-- question content -->
+                                <p class="mb-1">
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                </p>
+
+                                <!-- another info -->
+                                <div class="cus-split-short-info">
+                                    <span class="cus-split-item">2017-9-4</span>
+                                    <span class="cus-split-item">6 Answers</span>
+                                    <span class="cus-split-item">108 Follow</span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- article list -->
+                        <li style="padding-top: 1rem;">
+                            <!-- <div class="content__wrapper">
+                                <h2 class="text-color">Articles</h2>
+                            </div> -->
+                            <div class="cus-article-excerpt-card">
+                                <!-- Article title -->
+                                <h5>Article title</h5>
                                 <!-- avatar info -->
                                 <div>
                                     <div class="d-inline-block align-middle">
@@ -272,68 +498,24 @@
                                     </div>
                                     <div class="d-inline-block ml-2 align-middle">
                                         <div>Hugo Hoo</div>
-                                        <div class="text-muted" style="font-size: 95%;">This is my short intro.</div>
+                                        <div style="color: #555; font-size: 95%;">This is my short intro.</div>
                                     </div>
+                                </div>
+                                <!-- another info -->
+                                <div class="cus-split-short-info">
+                                    <span class="cus-split-item">23 Agree with this answer</span>
                                 </div>
                                 <!-- answer excerpt -->
                                 <p class="mb-1">
-                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. 
+                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
                                 </p>
-                            </div>
-                        </li>
-                        <li>
-                            <!-- <div class="content__wrapper">
-                                <h2 class="text-color">Question</h2>
-                            </div> -->
-                            <div class="py-3 px-4">
-                                <!-- question title -->
-                                <h5>Question title</h5>
-                                <!-- question content -->
-                                <p class="mb-1">
-                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-                                </p>
-
-                                <!-- another info -->
-                                <div class="text-muted" style="font-size: 90%;">
-                                    <span class="mr-2">2017-9-4</span>
-                                    <span class="mr-2">6 Answers</span>
-                                    <span class="mr-2">108 Follow</span>
+                                <!-- datetime -->
+                                <div class="cus-split-short-info">
+                                    <span class="cus-split-item">2017-9-11</span>
                                 </div>
-                            </div>
-                            <div class="py-3 px-4">
-                                <!-- question title -->
-                                <h5>Question title</h5>
-                                <!-- question content -->
-                                <p class="mb-1">
-                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-                                </p>
-
-                                <!-- another info -->
-                                <div class="text-muted" style="font-size: 90%;">
-                                    <span class="mr-2">2017-9-4</span>
-                                    <span class="mr-2">6 Answers</span>
-                                    <span class="mr-2">108 Follow</span>
-                                </div>
-                            </div>
-                            <div class="py-3 px-4">
-                                <!-- question title -->
-                                <h5>Question title</h5>
-                                <!-- question content -->
-                                <p class="mb-1">
-                                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-                                </p>
-
-                                <!-- another info -->
-                                <div class="text-muted" style="font-size: 90%;">
-                                    <span class="mr-2">2017-9-4</span>
-                                    <span class="mr-2">6 Answers</span>
-                                    <span class="mr-2">108 Follow</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content__wrapper">
-                                <h2 class="text-color">Articles</h2>
                             </div>
                         </li>
                         <li>
